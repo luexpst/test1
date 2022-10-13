@@ -17,19 +17,19 @@ def main():
         op = input('Entra una opció')
         if op=='d':
             #sumar 1 a la variable posX
-            posX = posX + 1
+            posX=posX+1
             pass
         elif op=='a':
             #restar 1 a la variable posX
-            posX = posX - 1
+            posX=posX-1
             pass
         elif op=='w':
             #sumar 1 a la variable posY
-            posY = posY + 1
+            posY=posY+1
             pass
         elif op=='s':
             #restar 1 a la variable posY
-            posY = posY - 1
+            posY=posY-1
             pass
         elif op=='0':
             sortir=True
