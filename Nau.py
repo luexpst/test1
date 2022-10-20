@@ -1,37 +1,27 @@
-def menu():
-    print("w- Moure amunt")
-    print("a- Moure esquerre")
-    print("d- Moure dreta")
-    print("s- Moure avall")    
-    print("0- Sortir")
+class Nau:
 
-def main():
+    def __init__(self,x,y):        
+        self.x=x
+        self.y=y
+        self.incr=1
 
-    menu()
-    
-    posX = 0
-    posY = 0
-
-    sortir=False
-    while not sortir:
-        op = input('Entra una opció')
-        if op=='d':
-            #sumar 1 a la variable posX
-            posX=posX+1
-        elif op=='a':
-            #restar 1 a la variable posX
-            posX=posX-1
-        elif op=='w':
-            #sumar 1 a la variable posY
-            posY=posY+1
-        elif op=='s':
-            #restar 1 a la variable posY
-            posY=posY-1
-        elif op=='0':
-            sortir=True
-            print("Has sortit de la nau")
+    def moure_dreta(self):
+        self.x=self.x+self.incr
         
-        print(f"La nau està a la posició ({posX},{posY})")
+    def moure_esquerre(self):
+        self.x=self.x-self.incr
+
+    def moure_amunt(self):
+        self.y=self.y+self.incr
         
-if __name__ == "__main__":
-    main()
+    def moure_avall(self):
+        self.y=self.y-self.incr
+        
+    def mostrar(self):
+        print()
+        print("   *")
+        print("  ***")
+        print(" *****")
+        print("*******")
+        print(f"x:{self.x}, y:{self.y}")        
+        print()
